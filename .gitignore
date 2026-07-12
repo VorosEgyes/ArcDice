@@ -3,3 +3,10 @@
 .vscode/c_cpp_properties.json
 .vscode/launch.json
 .vscode/ipch
+
+# KiCad local/session artifacts
+hardware/.history/
+hardware/digital-dice-backups/
+hardware/*.kicad_prl
+hardware/*.lck
+hardware/ERC.rpt
