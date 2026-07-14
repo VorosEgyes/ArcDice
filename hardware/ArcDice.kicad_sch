@@ -5,193 +5,12 @@
 	(uuid "f329b4b4-54e5-4441-9e8e-11711227a61c")
 	(paper "A4")
 	(title_block
-		(title "Digital Dice")
+		(title "ArcDice")
 		(date "2026-07-12")
 		(rev "v1.0")
 		(company "MM Industries")
 	)
 	(lib_symbols
-		(symbol "Connector:Conn_01x02_Pin"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x02_Pin"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x02, script generated"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x02_Pin_1_1"
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0.8636 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:Battery_Cell"
 			(pin_numbers
 				(hide yes)
@@ -1334,6 +1153,105 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers
 				(hide yes)
@@ -1488,6 +1406,196 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Switch:SW_SPDT"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPDT"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Switch, single pole double throw"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_SPDT_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.651 0.254) (xy 1.651 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 2.54)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 -2.54)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPDT_1_1"
+				(rectangle
+					(start -3.175 3.81)
+					(end 3.175 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1798,39 +1906,59 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 74.676 73.152)
+		(end 74.676 73.152)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d060da2a-8829-4e4e-b37c-5016c7488e42")
+	)
 	(junction
-		(at 97.79 64.77)
+		(at 119.38 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86188aec-6883-4a28-9644-1bb9543bf3d0")
+	)
+	(junction
+		(at 105.41 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "927e3157-afc6-4609-92e2-f77e20ecfd1c")
 	)
 	(junction
-		(at 121.92 95.25)
+		(at 129.54 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aa8d17ce-62c2-4a62-bbc5-b74ec312606e")
 	)
 	(junction
-		(at 111.76 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b7150491-cf18-44cd-bb68-593aae9244ca")
-	)
-	(junction
-		(at 121.92 58.42)
+		(at 129.54 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c599ba98-797e-447e-97f4-90d8bbf3e544")
 	)
 	(junction
-		(at 97.79 72.39)
+		(at 105.41 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c898160d-322f-478a-991c-703c9f585323")
 	)
+	(no_connect
+		(at 106.68 64.77)
+		(uuid "31dda890-6acd-4478-a385-56c1d51fa269")
+	)
+	(no_connect
+		(at 68.58 64.77)
+		(uuid "5a61d00e-2404-452d-9db2-9c3eac496eb8")
+	)
 	(wire
 		(pts
-			(xy 187.96 74.93) (xy 191.77 74.93)
+			(xy 195.58 95.25) (xy 199.39 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1840,7 +1968,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 46.99) (xy 60.96 46.99)
+			(xy 60.96 67.31) (xy 68.58 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1850,7 +1978,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 69.85) (xy 140.97 69.85)
+			(xy 144.78 90.17) (xy 148.59 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1860,27 +1988,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 41.91) (xy 91.44 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10ac4a02-6b69-416b-8c9f-f2027a1ccb95")
-	)
-	(wire
-		(pts
-			(xy 53.34 44.45) (xy 60.96 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d84f490-b116-41aa-b489-1a87161f57e2")
-	)
-	(wire
-		(pts
-			(xy 128.27 113.03) (xy 133.35 113.03)
+			(xy 135.89 133.35) (xy 140.97 133.35)
 		)
 		(stroke
 			(width 0)
@@ -1890,7 +1998,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 109.22) (xy 191.77 109.22)
+			(xy 195.58 129.54) (xy 199.39 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1900,7 +2008,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 120.65) (xy 199.39 120.65)
+			(xy 210.82 140.97) (xy 207.01 140.97)
 		)
 		(stroke
 			(width 0)
@@ -1910,7 +2018,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 95.25) (xy 121.92 100.33)
+			(xy 129.54 115.57) (xy 129.54 120.65)
 		)
 		(stroke
 			(width 0)
@@ -1920,7 +2028,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 49.53) (xy 80.01 49.53)
+			(xy 85.09 69.85) (xy 87.63 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1930,7 +2038,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 58.42) (xy 121.92 58.42)
+			(xy 105.41 78.74) (xy 129.54 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1940,7 +2048,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 77.47) (xy 140.97 77.47)
+			(xy 144.78 97.79) (xy 148.59 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1950,7 +2058,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 86.36) (xy 180.34 86.36)
+			(xy 180.34 106.68) (xy 187.96 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1960,7 +2068,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 74.93) (xy 180.34 74.93)
+			(xy 180.34 95.25) (xy 187.96 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1970,7 +2078,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 97.79) (xy 199.39 97.79)
+			(xy 210.82 118.11) (xy 207.01 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1980,7 +2088,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 52.07) (xy 191.77 52.07)
+			(xy 195.58 72.39) (xy 199.39 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1990,7 +2098,17 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 52.07) (xy 121.92 58.42)
+			(xy 85.09 62.23) (xy 96.52 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "510715db-f754-46ff-bf7a-d4e180bbace8")
+	)
+	(wire
+		(pts
+			(xy 129.54 72.39) (xy 129.54 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2000,7 +2118,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 63.5) (xy 180.34 63.5)
+			(xy 180.34 83.82) (xy 187.96 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2010,17 +2128,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 33.02) (xy 93.98 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64ab39aa-c896-4381-b51d-493c0586124c")
-	)
-	(wire
-		(pts
-			(xy 203.2 109.22) (xy 199.39 109.22)
+			(xy 210.82 129.54) (xy 207.01 129.54)
 		)
 		(stroke
 			(width 0)
@@ -2030,7 +2138,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 63.5) (xy 191.77 63.5)
+			(xy 195.58 83.82) (xy 199.39 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2040,7 +2148,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 97.79) (xy 180.34 97.79)
+			(xy 180.34 118.11) (xy 187.96 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2050,7 +2158,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 74.93) (xy 140.97 74.93)
+			(xy 144.78 95.25) (xy 148.59 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2060,7 +2168,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 97.79) (xy 191.77 97.79)
+			(xy 195.58 118.11) (xy 199.39 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2070,7 +2178,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 72.39) (xy 140.97 72.39)
+			(xy 144.78 92.71) (xy 148.59 92.71)
 		)
 		(stroke
 			(width 0)
@@ -2080,7 +2188,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 64.77) (xy 97.79 64.77)
+			(xy 93.98 85.09) (xy 105.41 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2090,7 +2198,17 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 77.47) (xy 57.15 82.55)
+			(xy 106.68 59.69) (xy 119.38 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "937872ff-534b-4dfb-9a36-cd1bedb2c7c3")
+	)
+	(wire
+		(pts
+			(xy 64.77 97.79) (xy 64.77 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2100,7 +2218,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 52.07) (xy 180.34 52.07)
+			(xy 180.34 72.39) (xy 187.96 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2110,7 +2228,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 113.03) (xy 120.65 113.03)
+			(xy 118.11 133.35) (xy 128.27 133.35)
 		)
 		(stroke
 			(width 0)
@@ -2120,7 +2238,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 86.36) (xy 199.39 86.36)
+			(xy 210.82 106.68) (xy 207.01 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2130,7 +2248,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 41.91) (xy 114.3 41.91)
+			(xy 119.38 59.69) (xy 121.92 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2140,7 +2258,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 63.5) (xy 199.39 63.5)
+			(xy 210.82 83.82) (xy 207.01 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2150,17 +2268,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 41.91) (xy 91.44 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "abefe39d-cbd3-46c5-aa45-426b01efe3c7")
-	)
-	(wire
-		(pts
-			(xy 137.16 80.01) (xy 140.97 80.01)
+			(xy 144.78 100.33) (xy 148.59 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2170,7 +2278,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 72.39) (xy 97.79 72.39)
+			(xy 93.98 92.71) (xy 105.41 92.71)
 		)
 		(stroke
 			(width 0)
@@ -2180,7 +2288,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 38.1) (xy 111.76 41.91)
+			(xy 119.38 55.88) (xy 119.38 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2190,17 +2298,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 41.91) (xy 111.76 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be0514c8-9d7d-4ca8-b51e-657233494b7d")
-	)
-	(wire
-		(pts
-			(xy 144.78 38.1) (xy 152.4 38.1)
+			(xy 152.4 58.42) (xy 160.02 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2210,7 +2308,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 120.65) (xy 191.77 120.65)
+			(xy 195.58 140.97) (xy 199.39 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2220,7 +2318,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 52.07) (xy 199.39 52.07)
+			(xy 210.82 72.39) (xy 207.01 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2230,7 +2328,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 82.55) (xy 140.97 82.55)
+			(xy 144.78 102.87) (xy 148.59 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2240,7 +2338,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 44.45) (xy 80.01 44.45)
+			(xy 85.09 64.77) (xy 87.63 64.77)
 		)
 		(stroke
 			(width 0)
@@ -2250,7 +2348,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 46.99) (xy 80.01 46.99)
+			(xy 85.09 67.31) (xy 87.63 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2260,7 +2358,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 95.25) (xy 121.92 95.25)
+			(xy 105.41 115.57) (xy 129.54 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2270,7 +2368,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 92.71) (xy 121.92 95.25)
+			(xy 129.54 113.03) (xy 129.54 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2280,7 +2378,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 72.39) (xy 97.79 95.25)
+			(xy 105.41 92.71) (xy 105.41 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2290,7 +2388,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 86.36) (xy 191.77 86.36)
+			(xy 195.58 106.68) (xy 199.39 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2300,7 +2398,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 64.77) (xy 97.79 58.42)
+			(xy 105.41 85.09) (xy 105.41 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2310,7 +2408,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 63.5) (xy 57.15 69.85)
+			(xy 64.77 83.82) (xy 64.77 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2320,7 +2418,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 38.1) (xy 134.62 38.1)
+			(xy 133.35 58.42) (xy 142.24 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2330,7 +2428,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 109.22) (xy 180.34 109.22)
+			(xy 180.34 129.54) (xy 187.96 129.54)
 		)
 		(stroke
 			(width 0)
@@ -2340,7 +2438,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 120.65) (xy 180.34 120.65)
+			(xy 180.34 140.97) (xy 187.96 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2350,7 +2448,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 74.93) (xy 199.39 74.93)
+			(xy 210.82 95.25) (xy 207.01 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2360,7 +2458,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 58.42) (xy 121.92 62.23)
+			(xy 129.54 78.74) (xy 129.54 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2368,18 +2466,8 @@
 		)
 		(uuid "f92ad127-c903-4440-bc94-062fa8de70a1")
 	)
-	(wire
-		(pts
-			(xy 53.34 38.1) (xy 53.34 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc4d9dec-2aaf-48fa-9925-5259b1fe3742")
-	)
 	(label "SEGMENT_MIDDLE_ROW"
-		(at 203.2 63.5 0)
+		(at 210.82 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2389,7 +2477,7 @@
 		(uuid "0ff58657-6b57-426e-8a01-ce6ac36fabbe")
 	)
 	(label "BAT_MINUS"
-		(at 57.15 82.55 0)
+		(at 64.77 102.87 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2399,7 +2487,7 @@
 		(uuid "119ccac0-441e-492a-bd40-dc8303705aee")
 	)
 	(label "SEGMENT_CENTER"
-		(at 203.2 52.07 0)
+		(at 210.82 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2409,7 +2497,7 @@
 		(uuid "1219747c-606d-4498-a962-ef20ba5b6041")
 	)
 	(label "BAT_PLUS"
-		(at 80.01 46.99 0)
+		(at 87.63 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2419,7 +2507,7 @@
 		(uuid "136b2829-ca7a-4946-a07b-bd59c5dbbd05")
 	)
 	(label "GND"
-		(at 172.72 52.07 0)
+		(at 180.34 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2429,7 +2517,7 @@
 		(uuid "14a117d2-ded5-4bfe-8889-eb521acd5b70")
 	)
 	(label "GND"
-		(at 172.72 63.5 0)
+		(at 180.34 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2439,7 +2527,7 @@
 		(uuid "153a4d0b-bbe0-45ca-b6a3-c4857f66eff0")
 	)
 	(label "GND"
-		(at 172.72 120.65 0)
+		(at 180.34 140.97 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2449,7 +2537,7 @@
 		(uuid "277772b6-d369-49f1-96cc-b546eb2d4714")
 	)
 	(label "SEGMENT_DIAGONAL_A"
-		(at 203.2 97.79 0)
+		(at 210.82 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2458,8 +2546,18 @@
 		)
 		(uuid "29267aad-b60d-4662-996b-e88edfa18e95")
 	)
+	(label "SW IN"
+		(at 87.63 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2d5980b5-be6e-419a-96dc-eb5fd3166502")
+	)
 	(label "SEGMENT_MIDDLE_ROW"
-		(at 140.97 77.47 0)
+		(at 148.59 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2469,7 +2567,7 @@
 		(uuid "3a413546-afee-4fb3-99b9-666aaeb96dd2")
 	)
 	(label "GND"
-		(at 172.72 86.36 0)
+		(at 180.34 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2479,7 +2577,7 @@
 		(uuid "4a14cb7e-98e8-4a5d-aaae-b35c0df4b627")
 	)
 	(label "GND"
-		(at 172.72 97.79 0)
+		(at 180.34 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2489,7 +2587,7 @@
 		(uuid "57ff749b-08da-4917-85d2-e6ef81dc2849")
 	)
 	(label "SEGMENT_DIAGONAL_B"
-		(at 140.97 74.93 0)
+		(at 148.59 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2499,7 +2597,7 @@
 		(uuid "66efa6da-47d9-4aa4-bcda-12ca55b569ef")
 	)
 	(label "SEGMENT_DIAGONAL_A"
-		(at 203.2 86.36 0)
+		(at 210.82 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2509,7 +2607,7 @@
 		(uuid "764d9165-a8eb-4433-94ec-9b2f044d2406")
 	)
 	(label "BTN_ROLL"
-		(at 140.97 80.01 0)
+		(at 148.59 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2518,18 +2616,8 @@
 		)
 		(uuid "88d97a90-0ec8-4665-96f2-4684988533b6")
 	)
-	(label "USB_5V"
-		(at 53.34 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8b478e72-860f-415a-b626-377dfcc9b0e2")
-	)
 	(label "SEGMENT_DIAGONAL_B"
-		(at 203.2 109.22 0)
+		(at 210.82 129.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2539,7 +2627,7 @@
 		(uuid "8e820981-b956-4bbf-9e76-b604231e9e01")
 	)
 	(label "SEGMENT_CENTER"
-		(at 140.97 69.85 0)
+		(at 148.59 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2549,7 +2637,7 @@
 		(uuid "91d6ffa2-2720-49e7-9b07-0ae379955176")
 	)
 	(label "GND"
-		(at 121.92 100.33 0)
+		(at 129.54 120.65 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2559,7 +2647,7 @@
 		(uuid "93239ff0-f952-4022-ad64-7c9cc99483fd")
 	)
 	(label "SEGMENT_MIDDLE_ROW"
-		(at 203.2 74.93 0)
+		(at 210.82 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2569,7 +2657,7 @@
 		(uuid "9d85bab6-260c-4394-8426-649e6215be82")
 	)
 	(label "SYS_VCC"
-		(at 121.92 52.07 0)
+		(at 129.54 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2579,7 +2667,7 @@
 		(uuid "9ec04b0d-3ade-439b-a34d-cce2ac0ff8ba")
 	)
 	(label "BAT_MINUS"
-		(at 80.01 49.53 0)
+		(at 87.63 69.85 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2589,7 +2677,7 @@
 		(uuid "a5a93669-48f4-473f-bfbd-b28f1502dc24")
 	)
 	(label "SEGMENT_DIAGONAL_B"
-		(at 203.2 120.65 0)
+		(at 210.82 140.97 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2599,7 +2687,7 @@
 		(uuid "ad234057-bb4f-4fac-9409-c80c3a115f13")
 	)
 	(label "SEGMENT_DIAGONAL_A"
-		(at 140.97 72.39 0)
+		(at 148.59 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2609,7 +2697,7 @@
 		(uuid "ae0c3931-7ace-435c-a146-23a1efd44b57")
 	)
 	(label "RESET_N"
-		(at 140.97 82.55 0)
+		(at 148.59 102.87 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2619,7 +2707,7 @@
 		(uuid "ae64a1f8-a16f-4696-b0db-0882b79d13a8")
 	)
 	(label "BAT_PLUS"
-		(at 57.15 63.5 0)
+		(at 64.77 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2629,7 +2717,7 @@
 		(uuid "b9d6c233-f247-4be4-bccf-e31160f60c69")
 	)
 	(label "GND"
-		(at 172.72 74.93 0)
+		(at 180.34 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2639,7 +2727,7 @@
 		(uuid "beb73312-b0f9-4d50-a4e4-dcd7bddeaaf5")
 	)
 	(label "RESET_N"
-		(at 110.49 113.03 0)
+		(at 118.11 133.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2649,7 +2737,7 @@
 		(uuid "caf0c9c1-35e4-4f8d-9510-82ca90b808a4")
 	)
 	(label "BTN_ROLL"
-		(at 152.4 38.1 0)
+		(at 160.02 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2659,7 +2747,7 @@
 		(uuid "d685d2f8-e65d-4709-9ada-822d97a3b391")
 	)
 	(label "GND"
-		(at 53.34 46.99 0)
+		(at 60.96 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2669,7 +2757,7 @@
 		(uuid "d794a1e2-0891-478f-bc1a-3aa5ff42cf25")
 	)
 	(label "SYS_VCC"
-		(at 114.3 41.91 0)
+		(at 121.92 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2679,7 +2767,7 @@
 		(uuid "f05be3ac-5c68-441e-9e79-595a700b7f8a")
 	)
 	(label "SYS_VCC"
-		(at 133.35 113.03 0)
+		(at 140.97 133.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2689,7 +2777,7 @@
 		(uuid "f932da9e-b3b5-4a47-8d05-bfddcbfdb384")
 	)
 	(label "GND"
-		(at 125.73 38.1 0)
+		(at 133.35 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2699,7 +2787,7 @@
 		(uuid "fc699075-b437-4964-bea9-4018efbe97d4")
 	)
 	(label "GND"
-		(at 172.72 109.22 0)
+		(at 180.34 129.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2709,7 +2797,7 @@
 		(uuid "fd9873df-8f51-4a0e-aca7-a48ed07d29fe")
 	)
 	(label "GND"
-		(at 80.01 44.45 0)
+		(at 87.63 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2719,39 +2807,43 @@
 		(uuid "fde585c5-ed24-4db1-9cea-53f860095446")
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 195.58 52.07 90)
+		(lib_id "Mechanical:MountingHole")
+		(at 63.5 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0b85358e-c2c4-46ad-bdbb-ec3d07822a9c")
-		(property "Reference" "R4"
-			(at 195.58 45.72 90)
+		(uuid "08477e19-0d91-43cf-acd8-a07aa76d3da3")
+		(property "Reference" "H2"
+			(at 66.04 43.1799 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "220R"
-			(at 195.58 48.26 90)
+		(property "Value" "MountingHole"
+			(at 66.04 45.7199 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 195.58 53.848 90)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 63.5 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2762,7 +2854,81 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 52.07 0)
+			(at 63.5 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 63.5 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ArcDice"
+				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 203.2 72.39 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0b85358e-c2c4-46ad-bdbb-ec3d07822a9c")
+		(property "Reference" "R4"
+			(at 203.2 66.04 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220R"
+			(at 203.2 68.58 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 203.2 74.168 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2773,7 +2939,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 195.58 52.07 0)
+			(at 203.2 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2790,7 +2956,7 @@
 			(uuid "c5f753f7-61b3-4d55-ac34-7e84ee1f144f")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "R4")
 					(unit 1)
@@ -2800,7 +2966,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 195.58 74.93 90)
+		(at 203.2 95.25 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2811,7 +2977,7 @@
 		(fields_autoplaced yes)
 		(uuid "27153abc-8a3c-4bbe-bdcc-a7e98a6f254d")
 		(property "Reference" "R5"
-			(at 195.58 68.58 90)
+			(at 203.2 88.9 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2821,7 +2987,7 @@
 			)
 		)
 		(property "Value" "220R"
-			(at 195.58 71.12 90)
+			(at 203.2 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2831,7 +2997,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 195.58 76.708 90)
+			(at 203.2 97.028 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2842,7 +3008,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 74.93 0)
+			(at 203.2 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2853,7 +3019,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 195.58 74.93 0)
+			(at 203.2 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2870,7 +3036,7 @@
 			(uuid "79fa89e4-591e-4e24-ac41-7bd9ccafd89f")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "R5")
 					(unit 1)
@@ -2880,7 +3046,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 184.15 63.5 0)
+		(at 191.77 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2890,7 +3056,7 @@
 		(dnp no)
 		(uuid "27de724c-5272-4c98-a8e5-b6b995faeb3f")
 		(property "Reference" "D3"
-			(at 184.15 57.15 0)
+			(at 191.77 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2900,7 +3066,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 182.5625 59.69 0)
+			(at 190.1825 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2911,7 +3077,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 184.15 63.5 0)
+			(at 191.77 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2922,7 +3088,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 63.5 0)
+			(at 191.77 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2933,7 +3099,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 184.15 63.5 0)
+			(at 191.77 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2944,7 +3110,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 184.15 63.5 0)
+			(at 191.77 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2955,7 +3121,7 @@
 			)
 		)
 		(property "POS" "MID_LEFT"
-			(at 179.832 60.452 0)
+			(at 187.452 80.772 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2972,7 +3138,7 @@
 			(uuid "d56c2ccf-66a5-4dbf-b026-ade836087285")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "D3")
 					(unit 1)
@@ -2982,7 +3148,7 @@
 	)
 	(symbol
 		(lib_id "TP4056:TP4056")
-		(at 74.93 62.23 0)
+		(at 82.55 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2993,7 +3159,7 @@
 		(fields_autoplaced yes)
 		(uuid "416f1042-889d-4287-af32-d151c6b22b20")
 		(property "Reference" "U2"
-			(at 69.215 35.56 0)
+			(at 76.835 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3003,7 +3169,7 @@
 			)
 		)
 		(property "Value" "TP4056_Module"
-			(at 69.215 38.1 0)
+			(at 76.835 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3013,7 +3179,7 @@
 			)
 		)
 		(property "Footprint" "MyFootprints:TP4056-Module"
-			(at 70.612 52.324 0)
+			(at 78.232 72.644 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3024,7 +3190,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 62.23 0)
+			(at 82.55 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3035,7 +3201,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 74.93 62.23 0)
+			(at 82.55 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3064,7 +3230,7 @@
 			(uuid "af2f6c17-82c1-4e8e-bfd4-e5aea59cef6b")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "U2")
 					(unit 1)
@@ -3074,7 +3240,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 195.58 86.36 90)
+		(at 203.2 106.68 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3085,7 +3251,7 @@
 		(fields_autoplaced yes)
 		(uuid "422d9caf-3477-4700-b3c4-a94a01c11eda")
 		(property "Reference" "R1"
-			(at 195.58 80.01 90)
+			(at 203.2 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3095,7 +3261,7 @@
 			)
 		)
 		(property "Value" "220R"
-			(at 195.58 82.55 90)
+			(at 203.2 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3105,7 +3271,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 195.58 88.138 90)
+			(at 203.2 108.458 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3116,7 +3282,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 86.36 0)
+			(at 203.2 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3127,7 +3293,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 195.58 86.36 0)
+			(at 203.2 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3144,7 +3310,7 @@
 			(uuid "64c09ac1-b488-4638-b83e-b18ffbe3236b")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "R1")
 					(unit 1)
@@ -3154,7 +3320,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 184.15 109.22 0)
+		(at 191.77 129.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3164,7 +3330,7 @@
 		(dnp no)
 		(uuid "4765f567-6340-4bd7-900c-8bcfe48904d0")
 		(property "Reference" "D2"
-			(at 184.15 102.616 0)
+			(at 191.77 122.936 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3174,7 +3340,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 182.5625 105.41 0)
+			(at 190.1825 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3185,7 +3351,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 184.15 109.22 0)
+			(at 191.77 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3196,7 +3362,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 109.22 0)
+			(at 191.77 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3207,7 +3373,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 184.15 109.22 0)
+			(at 191.77 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3218,7 +3384,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 184.15 109.22 0)
+			(at 191.77 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3229,7 +3395,7 @@
 			)
 		)
 		(property "POS" "TOP_RIGHT"
-			(at 184.658 105.41 0)
+			(at 192.278 125.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3245,7 +3411,7 @@
 			(uuid "48eba878-6ad7-4826-b72f-3eef5d574fe4")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "D2")
 					(unit 1)
@@ -3254,85 +3420,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 53.34 38.1 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4da33b85-80fe-4727-a84d-60b1d0069a0a")
-		(property "Reference" "#FLG01"
-			(at 53.34 36.195 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 53.086 33.528 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 53.34 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "46f41d37-e181-4f8f-ac84-77b984495f9a")
-		)
-		(instances
-			(project "digital-dice"
-				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 86.36 68.58 0)
+		(at 93.98 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3343,7 +3432,7 @@
 		(fields_autoplaced yes)
 		(uuid "4e97840b-ec7f-4a9c-9eaf-3bac3a5c7a33")
 		(property "Reference" "C2"
-			(at 90.17 66.4209 0)
+			(at 97.79 86.7409 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3354,7 +3443,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 90.17 68.9609 0)
+			(at 97.79 89.2809 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3365,7 +3454,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
-			(at 87.3252 72.39 0)
+			(at 94.9452 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3376,7 +3465,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 86.36 68.58 0)
+			(at 93.98 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3387,7 +3476,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 86.36 68.58 0)
+			(at 93.98 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3404,7 +3493,7 @@
 			(uuid "afc5f6d7-0df2-4245-a79e-29add765518b")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "C2")
 					(unit 1)
@@ -3414,7 +3503,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 111.76 38.1 0)
+		(at 119.38 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3425,7 +3514,7 @@
 		(fields_autoplaced yes)
 		(uuid "582504ea-12bf-4956-aa95-107c18d31101")
 		(property "Reference" "#FLG02"
-			(at 111.76 36.195 0)
+			(at 119.38 53.975 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3436,7 +3525,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 111.76 33.02 0)
+			(at 119.38 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3446,7 +3535,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 38.1 0)
+			(at 119.38 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3457,7 +3546,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 38.1 0)
+			(at 119.38 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3468,7 +3557,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 111.76 38.1 0)
+			(at 119.38 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3482,7 +3571,7 @@
 			(uuid "c2fb9d00-6c21-428e-a06c-e80ebebcd43a")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "#FLG02")
 					(unit 1)
@@ -3491,8 +3580,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 139.7 38.1 0)
+		(lib_id "Switch:SW_SPDT")
+		(at 101.6 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3501,9 +3590,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6faa3a3b-8082-4a93-9e9f-4904a23b7f27")
-		(property "Reference" "SW2"
-			(at 139.7 30.48 0)
+		(uuid "67811d17-8bd0-4a42-8e33-48ad46d61bd8")
+		(property "Reference" "SW1"
+			(at 101.6 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3512,8 +3601,8 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
-			(at 139.7 33.02 0)
+		(property "Value" "SW_SPDT"
+			(at 101.6 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3522,8 +3611,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H9.5mm"
-			(at 139.7 33.02 0)
+		(property "Footprint" "Button_Switch_THT:Switch_Slide_SS12D06_Generic"
+			(at 101.6 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3534,7 +3623,90 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 33.02 0)
+			(at 101.6 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 101.6 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f4cc95bb-616b-43cf-a513-765118b6036f")
+		)
+		(pin "3"
+			(uuid "80027cea-e934-44a4-aab5-7ba7113a089b")
+		)
+		(pin "2"
+			(uuid "641809ac-b315-4e21-98e6-102c641e3beb")
+		)
+		(instances
+			(project "ArcDice"
+				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 147.32 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6faa3a3b-8082-4a93-9e9f-4904a23b7f27")
+		(property "Reference" "SW2"
+			(at 147.32 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 147.32 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H9.5mm"
+			(at 147.32 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3545,7 +3717,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 139.7 38.1 0)
+			(at 147.32 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3562,7 +3734,7 @@
 			(uuid "6d3a0abc-f11f-464f-96e9-86cad91aac76")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "SW2")
 					(unit 1)
@@ -3572,7 +3744,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 195.58 97.79 90)
+		(at 203.2 118.11 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3583,7 +3755,7 @@
 		(fields_autoplaced yes)
 		(uuid "7807aae7-39ef-43a4-bb93-4125481d136f")
 		(property "Reference" "R7"
-			(at 195.58 91.44 90)
+			(at 203.2 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3593,7 +3765,7 @@
 			)
 		)
 		(property "Value" "220R"
-			(at 195.58 93.98 90)
+			(at 203.2 114.3 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3603,7 +3775,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 195.58 99.568 90)
+			(at 203.2 119.888 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3614,7 +3786,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 97.79 0)
+			(at 203.2 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3625,7 +3797,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 195.58 97.79 0)
+			(at 203.2 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3642,7 +3814,7 @@
 			(uuid "3d50bcad-d288-4c67-8120-6df8b59e5b58")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "R7")
 					(unit 1)
@@ -3651,8 +3823,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 63.5 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "78dc1f84-29da-4530-b581-7e7b1beb323e")
+		(property "Reference" "H4"
+			(at 66.04 53.3399 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 66.04 55.8799 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 63.5 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 63.5 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ArcDice"
+				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MCU_Microchip_ATtiny:ATtiny13A-P")
-		(at 121.92 77.47 0)
+		(at 129.54 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3663,7 +3913,7 @@
 		(fields_autoplaced yes)
 		(uuid "7e00eb32-cb0f-4eb2-931c-96d3dbd59d45")
 		(property "Reference" "U1"
-			(at 107.95 76.1999 0)
+			(at 115.57 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3674,7 +3924,7 @@
 			)
 		)
 		(property "Value" "ATtiny13A-P"
-			(at 107.95 78.7399 0)
+			(at 115.57 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3685,7 +3935,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 121.92 77.47 0)
+			(at 129.54 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3697,7 +3947,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8126.pdf"
-			(at 121.92 77.47 0)
+			(at 129.54 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3708,7 +3958,7 @@
 			)
 		)
 		(property "Description" "20MHz, 1kB Flash, 64B SRAM, 64B EEPROM, debugWIRE, DIP-8"
-			(at 121.92 77.47 0)
+			(at 129.54 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3743,7 +3993,7 @@
 			(uuid "7616e568-a5d3-43a8-a051-ef8affb06e58")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "U1")
 					(unit 1)
@@ -3752,39 +4002,43 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 195.58 109.22 90)
+		(lib_id "Mechanical:MountingHole")
+		(at 63.5 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "922b7c94-c0d2-4fc2-ac73-d543c1a13763")
-		(property "Reference" "R2"
-			(at 195.58 102.87 90)
+		(uuid "7ff599d4-5502-40df-ae43-ebe5405b9c42")
+		(property "Reference" "H1"
+			(at 66.04 38.0999 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "220R"
-			(at 195.58 105.41 90)
+		(property "Value" "MountingHole"
+			(at 66.04 40.6399 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 195.58 110.998 90)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 63.5 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3795,7 +4049,81 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 109.22 0)
+			(at 63.5 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 63.5 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ArcDice"
+				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 203.2 129.54 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "922b7c94-c0d2-4fc2-ac73-d543c1a13763")
+		(property "Reference" "R2"
+			(at 203.2 123.19 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220R"
+			(at 203.2 125.73 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 203.2 131.318 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3806,7 +4134,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 195.58 109.22 0)
+			(at 203.2 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3823,7 +4151,7 @@
 			(uuid "f018d710-7490-4b25-8479-cd09fbc17231")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "R2")
 					(unit 1)
@@ -3833,7 +4161,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 184.15 97.79 0)
+		(at 191.77 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3843,7 +4171,7 @@
 		(dnp no)
 		(uuid "9636cf4f-6dab-4b70-a989-49c0535ead3d")
 		(property "Reference" "D7"
-			(at 184.15 91.694 0)
+			(at 191.77 112.014 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3853,7 +4181,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 182.5625 93.98 0)
+			(at 190.1825 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3864,7 +4192,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 184.15 97.79 0)
+			(at 191.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3875,7 +4203,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 97.79 0)
+			(at 191.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3886,7 +4214,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 184.15 97.79 0)
+			(at 191.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3897,7 +4225,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 184.15 97.79 0)
+			(at 191.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3908,7 +4236,7 @@
 			)
 		)
 		(property "POS" "BOT_RIGHT"
-			(at 184.404 93.98 0)
+			(at 192.024 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3924,7 +4252,7 @@
 			(uuid "51b0d280-9369-45f1-933e-ca728aafc98f")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "D7")
 					(unit 1)
@@ -3933,39 +4261,43 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 195.58 120.65 90)
+		(lib_id "Mechanical:MountingHole")
+		(at 63.5 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a4c96ab4-b89d-4467-9e87-a9ba38b7d0e9")
-		(property "Reference" "R6"
-			(at 195.58 114.3 90)
+		(uuid "9a566275-0973-4d6c-9428-38ff65d89e71")
+		(property "Reference" "H3"
+			(at 66.04 48.2599 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "220R"
-			(at 195.58 116.84 90)
+		(property "Value" "MountingHole"
+			(at 66.04 50.7999 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 195.58 122.428 90)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 63.5 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3976,7 +4308,81 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 120.65 0)
+			(at 63.5 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 63.5 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ArcDice"
+				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 203.2 140.97 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4c96ab4-b89d-4467-9e87-a9ba38b7d0e9")
+		(property "Reference" "R6"
+			(at 203.2 134.62 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220R"
+			(at 203.2 137.16 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 203.2 142.748 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3987,7 +4393,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 195.58 120.65 0)
+			(at 203.2 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4004,7 +4410,7 @@
 			(uuid "dc54fd78-b955-4dfe-b541-9a99d4798db0")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "R6")
 					(unit 1)
@@ -4014,7 +4420,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 184.15 74.93 0)
+		(at 191.77 95.25 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4024,7 +4430,7 @@
 		(dnp no)
 		(uuid "ac43f317-46f6-4730-8945-302af9e9fda6")
 		(property "Reference" "D5"
-			(at 184.15 68.58 0)
+			(at 191.77 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4034,7 +4440,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 182.5625 71.12 0)
+			(at 190.1825 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4045,7 +4451,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 184.15 74.93 0)
+			(at 191.77 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4056,7 +4462,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 74.93 0)
+			(at 191.77 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4067,7 +4473,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 184.15 74.93 0)
+			(at 191.77 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4078,7 +4484,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 184.15 74.93 0)
+			(at 191.77 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4089,7 +4495,7 @@
 			)
 		)
 		(property "Field6" "MID_RIGHT"
-			(at 183.642 71.12 0)
+			(at 191.262 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4105,7 +4511,7 @@
 			(uuid "357065d4-0aed-4407-bec6-8dd2323a4fd0")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "D5")
 					(unit 1)
@@ -4115,7 +4521,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 195.58 63.5 90)
+		(at 203.2 83.82 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4126,7 +4532,7 @@
 		(fields_autoplaced yes)
 		(uuid "b4cb03f2-dd79-4d06-990f-e6dd70a5093b")
 		(property "Reference" "R3"
-			(at 195.58 57.15 90)
+			(at 203.2 77.47 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4136,7 +4542,7 @@
 			)
 		)
 		(property "Value" "220R"
-			(at 195.58 59.69 90)
+			(at 203.2 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4146,7 +4552,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 195.58 65.278 90)
+			(at 203.2 85.598 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4157,7 +4563,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 63.5 0)
+			(at 203.2 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4168,7 +4574,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 195.58 63.5 0)
+			(at 203.2 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4185,7 +4591,7 @@
 			(uuid "dc71d52e-4871-4546-abc5-554ae941e037")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "R3")
 					(unit 1)
@@ -4194,90 +4600,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 93.98 27.94 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ba9f7a15-e9da-4d67-9ed2-4e286ed0e4ae")
-		(property "Reference" "J1"
-			(at 95.25 27.3049 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SW ON/OFF"
-			(at 95.25 29.8449 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
-			(at 93.98 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 93.98 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 93.98 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "d342a105-5f86-4714-a3c4-69b0fe9a5250")
-		)
-		(pin "1"
-			(uuid "50ae4bc6-4acc-4771-a3a5-6a60e96a5b84")
-		)
-		(instances
-			(project "digital-dice"
-				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 97.79 68.58 0)
+		(at 105.41 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4288,7 +4612,7 @@
 		(fields_autoplaced yes)
 		(uuid "cbdf18c1-36b0-4f31-8f1d-c9b45525c637")
 		(property "Reference" "C1"
-			(at 101.6 67.3099 0)
+			(at 109.22 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4299,7 +4623,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 101.6 69.8499 0)
+			(at 109.22 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4310,7 +4634,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
-			(at 98.7552 72.39 0)
+			(at 106.3752 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4321,7 +4645,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 97.79 68.58 0)
+			(at 105.41 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4332,7 +4656,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 97.79 68.58 0)
+			(at 105.41 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4349,7 +4673,7 @@
 			(uuid "c34cd4db-56dc-400c-a796-e16178e9dbee")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "C1")
 					(unit 1)
@@ -4359,7 +4683,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 57.15 74.93 0)
+		(at 64.77 95.25 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4370,7 +4694,7 @@
 		(fields_autoplaced yes)
 		(uuid "cc985e51-cac7-462b-9b99-cad1cb0de26c")
 		(property "Reference" "BT1"
-			(at 60.96 71.8184 0)
+			(at 68.58 92.1384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4381,7 +4705,7 @@
 			)
 		)
 		(property "Value" "Battery_Cell"
-			(at 60.96 74.3584 0)
+			(at 68.58 94.6784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4391,8 +4715,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 57.15 73.406 90)
+		(property "Footprint" "Battery:Battery_18250_Tabbed_1S"
+			(at 64.77 93.726 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4403,7 +4727,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 73.406 90)
+			(at 64.77 93.726 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4414,7 +4738,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 57.15 74.93 0)
+			(at 64.77 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4425,7 +4749,7 @@
 			)
 		)
 		(property "Sim.Device" "V"
-			(at 57.15 74.93 0)
+			(at 64.77 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4436,7 +4760,7 @@
 			)
 		)
 		(property "Sim.Type" "DC"
-			(at 57.15 74.93 0)
+			(at 64.77 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4447,7 +4771,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 57.15 74.93 0)
+			(at 64.77 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4464,7 +4788,7 @@
 			(uuid "b782b4a2-56c4-4fc3-b15f-0eaeecfbe290")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "BT1")
 					(unit 1)
@@ -4474,7 +4798,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 124.46 113.03 90)
+		(at 132.08 133.35 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4485,7 +4809,7 @@
 		(fields_autoplaced yes)
 		(uuid "e11ae984-a6e8-4840-ba04-195379179cb7")
 		(property "Reference" "R8"
-			(at 124.46 106.68 90)
+			(at 132.08 127 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4495,7 +4819,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 124.46 109.22 90)
+			(at 132.08 129.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4505,7 +4829,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 124.46 114.808 90)
+			(at 132.08 135.128 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4516,7 +4840,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 113.03 0)
+			(at 132.08 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4527,7 +4851,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 124.46 113.03 0)
+			(at 132.08 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4544,7 +4868,7 @@
 			(uuid "2828567f-13f9-4db5-85f0-d8f6a001182a")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "R8")
 					(unit 1)
@@ -4554,7 +4878,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 184.15 52.07 0)
+		(at 191.77 72.39 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4564,7 +4888,7 @@
 		(dnp no)
 		(uuid "e240f326-73a4-436c-a9b3-a39fca833c8a")
 		(property "Reference" "D4"
-			(at 183.896 45.72 0)
+			(at 191.516 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4574,7 +4898,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 182.5625 48.26 0)
+			(at 190.1825 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4585,7 +4909,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 184.15 52.07 0)
+			(at 191.77 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4596,7 +4920,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 52.07 0)
+			(at 191.77 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4607,7 +4931,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 184.15 52.07 0)
+			(at 191.77 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4618,7 +4942,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 184.15 52.07 0)
+			(at 191.77 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4629,7 +4953,7 @@
 			)
 		)
 		(property "POS" "MID_CENTER"
-			(at 184.15 48.514 0)
+			(at 191.77 68.834 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4645,7 +4969,7 @@
 			(uuid "6a6415a3-44aa-42b1-bdc8-7d2b0c4e964d")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "D4")
 					(unit 1)
@@ -4655,7 +4979,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 184.15 120.65 0)
+		(at 191.77 140.97 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4665,7 +4989,7 @@
 		(dnp no)
 		(uuid "fd76e641-536a-4ea2-a777-5395ed9d8ec9")
 		(property "Reference" "D6"
-			(at 183.896 114.3 0)
+			(at 191.516 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4675,7 +4999,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 182.5625 116.84 0)
+			(at 190.1825 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4686,7 +5010,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 184.15 120.65 0)
+			(at 191.77 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4697,7 +5021,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 120.65 0)
+			(at 191.77 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4708,7 +5032,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 184.15 120.65 0)
+			(at 191.77 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4719,7 +5043,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 184.15 120.65 0)
+			(at 191.77 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4730,7 +5054,7 @@
 			)
 		)
 		(property "POS" "BOT_LEFT"
-			(at 184.15 116.84 0)
+			(at 191.77 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4746,7 +5070,7 @@
 			(uuid "55e7f120-55af-45d0-b997-3e247af25b41")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "D6")
 					(unit 1)
@@ -4756,7 +5080,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 184.15 86.36 0)
+		(at 191.77 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4766,7 +5090,7 @@
 		(dnp no)
 		(uuid "fe363d20-cca6-4b16-9d2f-c112eb3d4b72")
 		(property "Reference" "D1"
-			(at 184.15 80.01 0)
+			(at 191.77 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4776,7 +5100,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 182.5625 82.55 0)
+			(at 190.1825 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4787,7 +5111,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 184.15 86.36 0)
+			(at 191.77 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4798,7 +5122,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 86.36 0)
+			(at 191.77 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4809,7 +5133,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 184.15 86.36 0)
+			(at 191.77 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4820,7 +5144,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 184.15 86.36 0)
+			(at 191.77 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4831,7 +5155,7 @@
 			)
 		)
 		(property "POS" "TOP_LEFT"
-			(at 180.086 83.312 0)
+			(at 187.706 103.632 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4848,7 +5172,7 @@
 			(uuid "36a0c0d0-3ea8-4b90-9a83-d341151ee29e")
 		)
 		(instances
-			(project "digital-dice"
+			(project "ArcDice"
 				(path "/f329b4b4-54e5-4441-9e8e-11711227a61c"
 					(reference "D1")
 					(unit 1)

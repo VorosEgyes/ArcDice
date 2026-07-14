@@ -6,7 +6,8 @@
 
 # KiCad local/session artifacts
 hardware/.history/
-hardware/digital-dice-backups/
+hardware/*-backups/
 hardware/*.kicad_prl
 hardware/*.lck
 hardware/ERC.rpt
+hardware/DRC.rpt
