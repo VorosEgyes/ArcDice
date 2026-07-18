@@ -1,11 +1,17 @@
 #include <Arduino.h>
 #include <avr/sleep.h>
 
-// The 7 visible dice LEDs are wired as 4 logical groups:
-// - one center LED
-// - one top-left to bottom-right diagonal pair
-// - one top-right to bottom-left diagonal pair
-// - one middle-row pair
+// LED group layout on the 3x3 dice face:
+//
+//   TL  TM  TR
+//   ML  CC  MR        CC   = center       (SEGMENT_CENTER)
+//   BL  BM  BR        ML/MR = middle row  (SEGMENT_MIDDLE_ROW)
+//                      TL/BR = diagonal A  (SEGMENT_DIAGONAL_A)
+//                      TR/BL = diagonal B  (SEGMENT_DIAGONAL_B)
+//
+// NOTE: PB4 is the ATtiny13A RESET pin. Using it as a button input
+// requires the RSTDISBL fuse to be programmed, which DISABLES ISP
+// reprogramming -- a high-voltage programmer is then required to flash.
 #define SEGMENT_CENTER PB0
 #define SEGMENT_DIAGONAL_A PB1
 #define SEGMENT_DIAGONAL_B PB2
@@ -31,7 +37,8 @@ const uint8_t diceFaceMasks[7] = {
 volatile bool buttonPressed = false;
 volatile bool buttonInterruptPending = false;
 volatile uint8_t randomEntropy = 0;
-uint8_t prngState = 0x5A;
+volatile uint8_t edgeCounter = 0;
+volatile uint8_t prngState = 0x5A;
 
 void showFace(uint8_t face) {
   PORTB = (PORTB & ~kDisplayMask) | diceFaceMasks[face];
@@ -60,17 +67,27 @@ uint8_t randomFace() {
 void runStartupTest() {
   for (uint8_t face = 1; face <= 6; ++face) {
     showFace(face);
-    delay(120);
+    delay(110);
   }
+  // "All-segments-on" flash: lights every LED group at once for 200 ms.
+  // A dead segment or swapped wiring is immediately obvious this way,
+  // whereas cycling 1..6 hides a fault that overlaps a working face.
+  PORTB |= kDisplayMask;
+  delay(200);
   PORTB &= ~kDisplayMask;
 }
 
 void goToSleep() {
   set_sleep_mode(SLEEP_MODE_PWR_DOWN);
   sleep_enable();
-  sleep_mode();
-
-  // MCU wakes up here after interrupt
+  // Disable BOD during sleep to minimize power draw (~25 uA savings).
+  // Must be called within 3 cycles of sleep_enable() per datasheet.
+  sleep_bod_disable();
+  // Atomic-style sleep: enable interrupts, then sleep, then disable.
+  // Using sleep_mode() (which itself does sei+sleep_cpu+cli) races with
+  // a pending PCINT and can return immediately. Explicit form is safer.
+  sei();
+  sleep_cpu();
   sleep_disable();
 }
 
@@ -109,7 +126,7 @@ void loop() {
       showFace(randomFace());
       delay(60-i*4);
     }
-    showFace(randomFace());
+    // Last iteration already showed the result; no need to roll once more.
     delay(450); // Keep the result visible briefly
     PORTB &= ~kDisplayMask; // Turn off all display groups
   }
@@ -119,9 +136,14 @@ void loop() {
   }
 }
 
+// Accumulate entropy across multiple edges instead of overwriting on
+// each interrupt. A single TCNT0 sample is weak; XORing PINB and
+// counting edges gives more bits per button press.
 ISR(PCINT0_vect) {
   if (!(PINB & (1 << BUTTON_PIN))) {
-    randomEntropy = TCNT0;
+    randomEntropy ^= TCNT0;
+    randomEntropy ^= PINB;
+    edgeCounter++;
     buttonInterruptPending = true;
   }
 }
