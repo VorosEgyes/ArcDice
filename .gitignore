@@ -3,6 +3,7 @@
 .vscode/c_cpp_properties.json
 .vscode/launch.json
 .vscode/ipch
+.vscode/settings.json
 
 # KiCad local/session artifacts
 hardware/.history/
@@ -11,3 +12,6 @@ hardware/*.kicad_prl
 hardware/*.lck
 hardware/ERC.rpt
 hardware/DRC.rpt
+
+# macOS Finder metadata
+.DS_Store
