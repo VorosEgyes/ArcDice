@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://github.com/VorosEgyes/ArcDice#readme
+    about: Check the README, docs/BOM.md, and CHANGELOG.md first.
+  - name: Discussions
+    url: https://github.com/VorosEgyes/ArcDice/discussions
+    about: For questions, ideas, or showcase builds, please use Discussions.
+  - name: Security issue
+    url: https://github.com/VorosEgyes/ArcDice/security/advisories/new
+    about: Please report security issues privately via GitHub Security Advisories.
