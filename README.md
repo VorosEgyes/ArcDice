@@ -91,6 +91,11 @@ are usable as GPIO on the ATtiny13A in that case).
 pio run -e attiny13a -t upload
 ```
 
+## Additional Documentation
+
+- [CHANGELOG.md](CHANGELOG.md) — release history and notable changes.
+- [docs/BOM.md](docs/BOM.md) — bill of materials with footprints and suggested supplier parts.
+
 ## License
 
 MIT. See `LICENSE`.
