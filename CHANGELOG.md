@@ -8,11 +8,54 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Planned
-- GitHub Actions CI build workflow (`attiny13a` env, every push + PR)
-- Native unit tests for `diceFaceMasks[]` correctness
-- `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, issue and PR templates
-- Initial public `v1.0` release with assembled Gerber `V2` archive
 - Detailed assembly guide with HV programming instructions for `RSTDISBL`
+  (deferred — see the discussion in the release-readiness audit, the
+  ATtiny13A HV fuse programming is documented separately).
+- Initial public **v1.0.0** release (this section is collapsed into the
+  [1.0.0] entry below once the release tag is pushed).
+
+## [1.0.0] - 2026-07-19
+
+**First public release.** Suitable for small-batch manufacturing of the
+ArcDice 7-LED digital dice kit. KiCad `V2` hardware, MIT-licensed
+firmware, full bill of materials, host-native unit tests, and CI build.
+
+### Highlights
+- **ATtiny13A firmware** with button-wake sleep, BOD disable during
+  sleep, edge-accumulated PRNG entropy, and a startup "all-segments-on"
+  flash to surface dead-segment faults immediately.
+- **KiCad `V2` hardware design** with 5 mm through-hole LEDs, axial
+  DIN0207 resistors, USBasp-friendly ISP header, TP4056 Li-ion charger
+  module, and 1S battery footprint. PCBWay-ready Gerber archive is
+  bundled under `hardware/Gerber/V2/`.
+- **Documented `RSTDISBL` trade-off** — PB4 doubles as the roll
+  button and the ATtiny13A RESET pin, so a high-voltage programmer is
+  required once the button-only variant is programmed.
+- **Full [BOM](docs/BOM.md)** with footprints and suggested supplier
+  parts (LCSC, Digi-Key, Mouser, TME, Reichelt, AliExpress).
+- **GitHub Actions CI** (`Build & Test` workflow): host-native Unity
+  tests gate every AVR build, the firmware size check fails if the
+  `.text` section exceeds the 1024-byte ATtiny13A flash budget, and
+  the resulting `firmware.hex` + `firmware.elf` are uploaded as a
+  14-day artifact.
+- **Refactored face-mask logic** in `include/dice.h` as `constexpr`
+  values, so the host test runner can validate face-mapping without an
+  AVR toolchain.
+
+### Changed since 0.9.0
+- No code changes — the `0.9.0` pre-release is functionally identical to
+  `1.0.0`. The version bump reflects the addition of the documentation,
+  tests, and CI that 0.9.0 was missing.
+
+### Notes for downstream users
+- **Programming**: connect a USBasp, build with `pio run -e attiny13a`,
+  upload with `pio run -e attiny13a -t upload`. The shipped firmware
+  assumes the `RSTDISBL` fuse is already programmed (see README for
+  the trade-off and HV programming alternatives).
+- **Battery**: use a protected 1S Li-ion/LiPo cell. The TP4056 module
+  on board is a charger, not a BMS.
+- **LEDs**: 5 mm through-hole, any colour. Forward voltage considerations
+  for the 220 Ω current-limiting resistors are in `docs/BOM.md`.
 
 ## [0.9.0] - 2026-07-18
 
@@ -120,7 +163,8 @@ Initial commit.
 - `.vscode/extensions.json` recommending PlatformIO IDE.
 - First README.
 
-[Unreleased]: https://github.com/VorosEgyes/ArcDice/compare/HEAD...HEAD
+[Unreleased]: https://github.com/VorosEgyes/ArcDice/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/VorosEgyes/ArcDice/compare/380ab67...v1.0.0
 [0.9.0]: https://github.com/VorosEgyes/ArcDice/compare/c320930...380ab67
 [0.5.0]: https://github.com/VorosEgyes/ArcDice/compare/7bee596...afaace9
 [0.4.0]: https://github.com/VorosEgyes/ArcDice/compare/b4b2c73...7bee596

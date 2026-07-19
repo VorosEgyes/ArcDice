@@ -1,5 +1,7 @@
 # ArcDice
 
+[![Build & Test](https://github.com/VorosEgyes/ArcDice/actions/workflows/firmware-build.yml/badge.svg)](https://github.com/VorosEgyes/ArcDice/actions/workflows/firmware-build.yml)
+
 ArcDice is a compact ATtiny13-based digital dice project with a 7-LED face, low-power sleep behavior, and a matching KiCad hardware design.
 
 Keywords: digital dice, ATtiny13 dice, LED dice, DIY electronic dice.
