@@ -1,4 +1,4 @@
-name: Firmware Build
+name: Build & Test
 
 on:
   push:
@@ -9,13 +9,33 @@ on:
 
 # Cancel any in-flight run for the same ref when a new commit arrives.
 concurrency:
-  group: firmware-build-${{ github.ref }}
+  group: build-test-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  build-attiny13a:
-    name: Build attiny13a
+  # Host-native unit tests run first (fast, no AVR toolchain needed).
+  # If these fail, the AVR build is skipped — saves CI minutes and
+  # surfaces the regression faster.
+  test-native:
+    name: Host unit tests (native)
     runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install PlatformIO Core
+        run: |
+          python -m pip install --upgrade pip
+          pip install platformio
+
+      - name: Run native unit tests
+        run: pio test -e native
+
+  build-attiny13a:
+    name: Build attiny13a firmware
+    runs-on: ubuntu-latest
+    needs: test-native
 
     steps:
       - name: Checkout repository
