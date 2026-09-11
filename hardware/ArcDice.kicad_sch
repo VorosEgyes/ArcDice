@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "ArcDice")
-		(date "2026-07-12")
-		(rev "v1.0")
+		(date "2026-09-11")
+		(rev "v1.1")
 		(company "MM Industries")
 	)
 	(lib_symbols
@@ -2842,7 +2842,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 63.5 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -3858,7 +3858,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 63.5 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -4037,7 +4037,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 63.5 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -4296,7 +4296,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 63.5 49.53 0)
 			(hide yes)
 			(show_name no)
