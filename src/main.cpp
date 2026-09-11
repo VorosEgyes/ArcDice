@@ -10,17 +10,16 @@
 //                      TL/BR = diagonal A  (SEGMENT_DIAGONAL_A)
 //                      TR/BL = diagonal B  (SEGMENT_DIAGONAL_B)
 //
-// NOTE: PB4 is the ATtiny13A RESET pin. Using it as a button input
-// requires the RSTDISBL fuse to be programmed, which DISABLES ISP
-// reprogramming -- a high-voltage programmer is then required to flash.
-//
 // The constants below come from include/dice.h so the host-native test
 // runner can validate face-mask logic without an AVR toolchain.
 using arcdice::kDisplayMask;
 using arcdice::kButtonMask;
 using arcdice::kDiceFaceMasks;
+using arcdice::kCenterMask;
+using arcdice::kDiagonalAMask;
+using arcdice::kDiagonalBMask;
+using arcdice::kMiddleRowMask;
 
-volatile bool buttonPressed = false;
 volatile bool buttonInterruptPending = false;
 volatile uint8_t randomEntropy = 0;
 volatile uint8_t edgeCounter = 0;
@@ -50,16 +49,33 @@ uint8_t randomFace() {
   return (nextRandomByte() % 6) + 1;
 }
 
-void runStartupTest() {
-  for (uint8_t face = 1; face <= 6; ++face) {
-    showFace(face);
-    delay(110);
+// Waits up to `ms`, 1 ms at a time, so a fresh button press can interrupt
+// an in-progress animation immediately instead of waiting for it to finish.
+bool waitOrPressed(uint16_t ms) {
+  for (uint16_t i = 0; i < ms; ++i) {
+    delay(1);
+    if (buttonInterruptPending && !(PINB & kButtonMask)) {
+      return true;
+    }
   }
-  // "All-segments-on" flash: lights every LED group at once for 200 ms.
-  // A dead segment or swapped wiring is immediately obvious this way,
-  // whereas cycling 1..6 hides a fault that overlaps a working face.
-  PORTB |= kDisplayMask;
-  delay(200);
+  return false;
+}
+
+// Number of spin steps in a real roll (see performRoll()).
+const uint8_t kDemoSpinCount = 8;
+
+void runStartupTest() {
+  // Running-light demo: chases through the 4 LED groups starting top-right
+  // (diagonal B), 3 full laps around, then goes dark.
+  const uint8_t sequence[4] = {
+    kDiagonalBMask, kMiddleRowMask, kDiagonalAMask, kCenterMask
+  };
+  for (uint8_t lap = 0; lap < 3; ++lap) {
+    for (uint8_t i = 0; i < 4; ++i) {
+      PORTB = (PORTB & ~kDisplayMask) | sequence[i];
+      delay(20);
+    }
+  }
   PORTB &= ~kDisplayMask;
 }
 
@@ -91,6 +107,30 @@ void setup() {
   runStartupTest();
 }
 
+// Runs the spin animation and result display. A fresh button press at any
+// point (mid-spin or while the result is shown) restarts the roll right away.
+void performRoll() {
+  const uint16_t kRollStepMs = 30; // Constant spin speed, no slow-down.
+  bool restart = true;
+  while (restart) {
+    restart = false;
+    buttonInterruptPending = false;
+    uint8_t rollCount = kDemoSpinCount * 2; // Roll spins twice as long as the demo.
+    for (uint8_t i = 0; i <= rollCount; ++i) {
+      showFace(randomFace());
+      if (waitOrPressed(kRollStepMs)) {
+        restart = true;
+        break;
+      }
+    }
+    // Last iteration already showed the result; no need to roll once more.
+    if (!restart && waitOrPressed(1200)) { // Keep the result visible briefly
+      restart = true;
+    }
+  }
+  PORTB &= ~kDisplayMask; // Turn off all display groups
+}
+
 void loop() {
   if (buttonInterruptPending) {
     noInterrupts();
@@ -101,23 +141,11 @@ void loop() {
     delay(25);
     if (!(PINB & kButtonMask)) {
       mixEntropy((entropy << 1) ^ PINB);
-      buttonPressed = true;
+      performRoll();
     }
   }
 
-  if (buttonPressed) {
-    buttonPressed = false;
-    uint8_t rollCount = 5 + (nextRandomByte() % 7);
-    for (uint8_t i = 0; i <= rollCount; ++i) {
-      showFace(randomFace());
-      delay(60-i*4);
-    }
-    // Last iteration already showed the result; no need to roll once more.
-    delay(450); // Keep the result visible briefly
-    PORTB &= ~kDisplayMask; // Turn off all display groups
-  }
-
-  if (!buttonPressed && !buttonInterruptPending) {
+  if (!buttonInterruptPending) {
     goToSleep(); // Go to sleep mode
   }
 }

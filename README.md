@@ -43,23 +43,6 @@ groups (center, two diagonals, middle row). The resulting faces are:
 Note: face 3 uses diagonal A (TL+BR) plus center, giving a symmetric
 vertical middle column -- the standard 7-pip rendering of 3.
 
-### RESET Pin / RSTDISBL Fuse
-
-**PB4 is the ATtiny13A RESET pin.** Using it as a button input requires
-the `RSTDISBL` fuse to be programmed, which **disables ISP
-reprogramming**. Once `RSTDISBL` is set:
-
-- USBasp (ISP) **cannot** reflash the chip
-- A high-voltage programmer (e.g. HV rescue shield, Atmel-ICE in HV
-  mode, or a dedicated HVSP programmer) is required to re-flash
-- Verify this trade-off before flashing a board you intend to iterate on
-
-The firmware shipped in this repo assumes `RSTDISBL` is already
-programmed. If you flashed your chip with a stock AVR fuse setup and
-PB4 is still /RESET, the button will not work -- program `RSTDISBL`
-first via HV, or move the button to a non-RESET pin (only PB0-PB3
-are usable as GPIO on the ATtiny13A in that case).
-
 ## Hardware
 
 - KiCad project files:

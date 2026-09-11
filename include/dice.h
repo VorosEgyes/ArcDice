@@ -29,7 +29,7 @@
 #define DICE_SEGMENT_MIDDLE_ROW 3   // PB3 — ML + MR middle row
 #endif
 
-#define DICE_BUTTON_PIN         4   // PB4 — also the ATtiny13A RESET pin
+#define DICE_BUTTON_PIN         4   // PB4 — roll button input
 
 #define DICE_BIT(bit)           ((uint8_t)(1u << (bit)))
 

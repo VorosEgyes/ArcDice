@@ -18,7 +18,7 @@ references.
 | U1 | 1 | `ATtiny13A-P` | 8-bit AVR MCU, 1 KB flash, 64 B EEPROM, 64 B SRAM, internal 9.6 MHz oscillator | DIP-8 (through-hole) | Microchip ATtiny13A-PU (Digi-Key ATATTINY13A-PU-ND) |
 | D1–D7 | 7 | `LED` (generic) | 5 mm through-hole LED — pick your colour (red, yellow, green, blue, white all fit). Forward voltage ~2.0 V (red) to ~3.2 V (blue/white) at 20 mA | `LED_THT:LED_D5.0mm` | Kingbright L-7113ID (red, THT, 5 mm) or any 5 mm LED of your choice |
 | R1–R7 | 7 | Resistor 220 Ω, ¼ W | LED current-limiting. With 3.0 V Li-ion and a red LED (~2 V Vf), 220 Ω gives ~5 mA per LED — plenty for a battery-powered dice | `Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal` | Yageo MFR-25FBF52-220R (Digi-Key 220XBK-ND) |
-| SW1 | 1 | `SW_Push` — roll button | 6 mm × 9.5 mm through-hole tactile push button, SPST-NO. Connected to PB4 (ATtiny13A RESET pin) to GND, internal pull-up enabled in firmware | `Button_Switch_THT:SW_PUSH_6mm_H9.5mm` | C&K PTS810SJM250SMTRLFS or any equivalent 6 mm THT tactile |
+| SW1 | 1 | `SW_Push` — roll button | 6 mm × 9.5 mm through-hole tactile push button, SPST-NO. Connected to PB4 to GND, internal pull-up enabled in firmware | `Button_Switch_THT:SW_PUSH_6mm_H9.5mm` | C&K PTS810SJM250SMTRLFS or any equivalent 6 mm THT tactile |
 | SW2 | 1 | `Switch_Slide_SS12D06_Generic` | SPDT slide switch — most likely the power on/off switch between battery and TP4056 / load | `Button_Switch_THT:Switch_Slide_SS12D06_Generic` | SS12D06G3 or any equivalent SPDT slide switch, THT |
 | SW3 | 1 | `SW_SPDT` | Second SPDT switch — check schematic for exact use (likely mode-select or reset disable) | (KiCad symbol `Switch:SW_SPDT`, footprint TBD) | Any SPDT THT slide/toggle switch |
 | BT1 | 1 | `Battery_Cell` | Single 3.7 V Li-ion / LiPo cell (1S), nominal capacity 100–500 mAh typical for a dice. Use a protected cell (with BMS) and add a 1N4148 flyback diode if driving the LEDs without other regulation | Through-hole battery holder footprint (KiCad `Device:Battery_Cell`) | 1S Li-ion/LiPo |
@@ -38,7 +38,7 @@ references.
 ## What is NOT on this BOM
 
 - **USBasp programmer** — required to flash the ATtiny13A initially, but not part of the assembled board.
-- **High-voltage (HV) programmer** — required to set the `RSTDISBL` fuse (which lets PB4 be used as a button input), and **required** to ever reflash the chip after `RSTDISBL` is set. A DIY "HV rescue shield" with an Arduino Uno + 12 V source works; or use an Atmel-ICE in HV mode.
+
 - **Battery** — listed above for reference but typically user-supplied (a protected 1S cell with leads).
 - **Enclosure / 3D-printed case** — not in the current hardware design.
 
