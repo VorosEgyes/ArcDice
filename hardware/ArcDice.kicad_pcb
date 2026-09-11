@@ -8210,8 +8210,8 @@
 		(layer "Edge.Cuts")
 		(uuid "38ebd6db-545b-4698-b6a6-e468e6c55bfc")
 	)
-	(gr_text "v2.0"
-		(at 157.75 107.75 0)
+	(gr_text "PCB ver. v2.1"
+		(at 151.5 107.75 0)
 		(layer "F.SilkS")
 		(uuid "09acc249-9c0d-40b7-9fb1-47cffe125c6a")
 		(effects
