@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "10.0.1"
     },
-    "CreationDate": "2026-07-16T16:05:34+02:00"
+    "CreationDate": "2026-09-12T00:47:02+02:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "ArcDice",
       "GUID": "41726344-6963-4652-9e6b-696361645f70",
-      "Revision": "v2.0"
+      "Revision": "v2.1"
     },
     "Size": {
       "X": 70.05,
