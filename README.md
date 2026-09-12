@@ -54,6 +54,18 @@ vertical middle column -- the standard 7-pip rendering of 3.
 
 ## Images
 
+### Assembled Board
+
+![ArcDice assembled, all segments lit](docs/images/assembled-hero.jpg)
+
+![ArcDice assembled, side angle showing battery](docs/images/assembled-side-angle.jpg)
+
+### Bare PCB
+
+![ArcDice bare PCB, front](docs/images/pcb-front-bare.jpg)
+
+![ArcDice bare PCB, back](docs/images/pcb-back-bare.jpg)
+
 ### 3D Top
 
 ![ArcDice 3D top](docs/arcdice-3d-top.png)
