@@ -1,0 +1,27 @@
+title: ArcDice — ATtiny13 Digital Dice
+description: Open-source ATtiny13A-based digital dice. Hardware v2.1, firmware v1.1.0, MIT licensed.
+theme: minima
+baseurl: "/ArcDice"
+url: "https://VorosEgyes.github.io"
+repository: VorosEgyes/ArcDice
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+# Social preview fallback (used by jekyll-seo-tag)
+logo: /ArcDice/docs/images/assembled-hero.jpg
+
+# Exclude non-page files from processing
+exclude:
+  - BOM.md
+  - ASSEMBLY_GUIDE.md
+  - gerber-v2.1.zip
+  - bom-v2.1.csv
+  - firmware-v1.1.0.hex
+  - "*.gbr"
+  - "*.gbrjob"
