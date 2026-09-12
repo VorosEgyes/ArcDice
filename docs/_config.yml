@@ -14,7 +14,7 @@ highlighter: rouge
 permalink: /:title/
 
 # Social preview fallback (used by jekyll-seo-tag)
-logo: /ArcDice/docs/images/assembled-hero.jpg
+logo: /images/assembled-hero.jpg
 
 # Exclude non-page files from processing
 exclude:

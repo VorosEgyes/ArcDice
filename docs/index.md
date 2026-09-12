@@ -16,7 +16,7 @@ title: ATtiny13 Digital Dice
     </div>
   </div>
   <div class="hero-image">
-    <img src="{{ '/docs/images/assembled-hero.jpg' | relative_url }}" alt="ArcDice assembled prototype with all 7 LEDs lit showing a 6">
+    <img src="{{ '/images/assembled-hero.jpg' | relative_url }}" alt="ArcDice assembled prototype with all 7 LEDs lit showing a 6">
   </div>
 </div>
 
@@ -42,11 +42,11 @@ The hardware is open (KiCad schematics + PCB layout, MIT licensed), the firmware
 
 <div class="gallery-grid">
   <div class="gallery-item">
-    <img src="{{ '/docs/images/pcb-front-bare.jpg' | relative_url }}" alt="PCB front side, unpopulated">
+    <img src="{{ '/images/pcb-front-bare.jpg' | relative_url }}" alt="PCB front side, unpopulated">
     <p class="gallery-caption">PCB front side (bare)</p>
   </div>
   <div class="gallery-item">
-    <img src="{{ '/docs/images/pcb-back-bare.jpg' | relative_url }}" alt="PCB back side, unpopulated">
+    <img src="{{ '/images/pcb-back-bare.jpg' | relative_url }}" alt="PCB back side, unpopulated">
     <p class="gallery-caption">PCB back side (bare)</p>
   </div>
 </div>
@@ -69,7 +69,7 @@ The hardware is open (KiCad schematics + PCB layout, MIT licensed), the firmware
 ## Demo
 
 <div class="demo-gif">
-  <img src="{{ '/docs/arcdice-demo.gif' | relative_url }}" alt="ArcDice demo: button press animates LEDs to a 3">
+  <img src="{{ '/arcdice-demo.gif' | relative_url }}" alt="ArcDice demo: button press animates LEDs to a 3">
   <p><em>Press the button — the 7 LEDs animate for ~1.5 seconds, then settle on a random number from 1 to 6.</em></p>
 </div>
 
@@ -81,15 +81,15 @@ The dice face logic is unit-tested against the canonical patterns in `include/di
 
 <div class="gallery-grid">
   <div class="gallery-item">
-    <img src="{{ '/docs/images/assembled-hero.jpg' | relative_url }}" alt="Assembled ArcDice showing a 6">
+    <img src="{{ '/images/assembled-hero.jpg' | relative_url }}" alt="Assembled ArcDice showing a 6">
     <p class="gallery-caption">All 7 LEDs lit — a 6</p>
   </div>
   <div class="gallery-item">
-    <img src="{{ '/docs/images/assembled-side-angle.jpg' | relative_url }}" alt="Side angle showing PCB thickness">
+    <img src="{{ '/images/assembled-side-angle.jpg' | relative_url }}" alt="Side angle showing PCB thickness">
     <p class="gallery-caption">Side view — battery + TP4056 visible</p>
   </div>
   <div class="gallery-item">
-    <img src="{{ '/docs/images/hero.jpg' | relative_url }}" alt="Hero shot, top-down">
+    <img src="{{ '/images/hero.jpg' | relative_url }}" alt="Hero shot, top-down">
     <p class="gallery-caption">Top-down view</p>
   </div>
 </div>

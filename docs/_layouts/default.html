@@ -9,18 +9,18 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
   <meta property="og:description" content="{{ site.description | escape }}">
-  <meta property="og:image" content="{{ '/docs/images/assembled-hero.jpg' | absolute_url }}">
+  <meta property="og:image" content="{{ '/images/assembled-hero.jpg' | absolute_url }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page.title | default: site.title | escape }}">
   <meta name="twitter:description" content="{{ site.description | escape }}">
-  <meta name="twitter:image" content="{{ '/docs/images/assembled-hero.jpg' | absolute_url }}">
+  <meta name="twitter:image" content="{{ '/images/assembled-hero.jpg' | absolute_url }}">
 
   <title>{% if page.title %}{{ page.title | escape }} | {{ site.title }}{% else %}{{ site.title | escape }}{% endif %}</title>
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link rel="icon" type="image/jpeg" href="{{ '/docs/images/hero.jpg' | relative_url }}">
+  <link rel="icon" type="image/jpeg" href="{{ '/images/hero.jpg' | relative_url }}">
 
   {%- feed_meta -%}
   {%- seo -%}
