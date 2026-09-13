@@ -11,7 +11,7 @@ title: ATtiny13 Digital Dice
     <p class="tagline">An open-source digital dice built from an ATtiny13A — 1 KB of flash, 7 LEDs, one button, infinite rolls.</p>
     <div class="cta-row">
       <a class="cta-button" href="{{ '/#download' | relative_url }}">Download v1.1.0</a>
-      <a class="cta-button secondary" href="{{ site.repository }}">View on GitHub ↗</a>
+      <a class="cta-button secondary" href="{{ site.github_url }}">View on GitHub ↗</a>
       <a class="cta-button secondary" href="{{ '/#demo' | relative_url }}">Watch demo</a>
     </div>
   </div>
@@ -116,14 +116,14 @@ The full build takes about 30 minutes if you've soldered through-hole before.
 
 ## Download
 
-Latest release: **[v1.1.0 — Hardware v2.1]({{ site.repository }}/releases/tag/v1.1.0)** (2026-09-11)
+Latest release: **[v1.1.0 — Hardware v2.1]({{ site.github_url }}/releases/tag/v1.1.0)** (2026-09-11)
 
 | Asset | Size | Description |
 |-------|------:|-------------|
-| [firmware-v1.1.0.hex]({{ site.repository }}/releases/download/v1.1.0/firmware-v1.1.0.hex) | 1.7 KB | Pre-compiled ATtiny13A firmware |
-| [gerber-v2.1.zip]({{ site.repository }}/releases/download/v1.1.0/gerber-v2.1.zip) | 208 KB | PCBWay-ready Gerber package |
-| [bom-v2.1.csv]({{ site.repository }}/releases/download/v1.1.0/bom-v2.1.csv) | 2.7 KB | Bill of Materials (10 lines, 26 parts) |
-| [assembly-guide-v2.1.md]({{ site.repository }}/releases/download/v1.1.0/assembly-guide-v2.1.md) | 4.8 KB | 6-step build instructions |
+| [firmware-v1.1.0.hex]({{ site.github_url }}/releases/download/v1.1.0/firmware-v1.1.0.hex) | 1.7 KB | Pre-compiled ATtiny13A firmware |
+| [gerber-v2.1.zip]({{ site.github_url }}/releases/download/v1.1.0/gerber-v2.1.zip) | 208 KB | PCBWay-ready Gerber package |
+| [bom-v2.1.csv]({{ site.github_url }}/releases/download/v1.1.0/bom-v2.1.csv) | 2.7 KB | Bill of Materials (10 lines, 26 parts) |
+| [assembly-guide-v2.1.md]({{ site.github_url }}/releases/download/v1.1.0/assembly-guide-v2.1.md) | 4.8 KB | 6-step build instructions |
 
 **SHA256** (firmware):
 ```
@@ -134,4 +134,4 @@ Always verify before flashing.
 
 ## License
 
-MIT — see [LICENSE]({{ site.repository }}/blob/main/LICENSE). Schematics, PCB layout, and firmware are all released under the same terms. Feel free to fork, modify, and build your own version.
+MIT — see [LICENSE]({{ site.github_url }}/blob/main/LICENSE). Schematics, PCB layout, and firmware are all released under the same terms. Feel free to fork, modify, and build your own version.

@@ -4,6 +4,7 @@ theme: minima
 baseurl: "/ArcDice"
 url: "https://VorosEgyes.github.io"
 repository: VorosEgyes/ArcDice
+github_url: https://github.com/VorosEgyes/ArcDice
 
 plugins:
   - jekyll-feed
