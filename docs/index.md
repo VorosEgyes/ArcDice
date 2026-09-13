@@ -98,16 +98,16 @@ The dice face logic is unit-tested against the canonical patterns in `include/di
 
 The project ships with everything you need:
 
-- **Pre-compiled firmware** (`firmware-v1.1.0.hex`) — flash with a $5 USBasp and `avrdude` in 30 seconds
-- **Gerber package** (`gerber-v2.1.zip`) — upload the inner `Archive.zip` to PCBWay or JLCPCB; ~$5 for 5 boards
-- **BOM CSV** (`bom-v2.1.csv`) — 10 lines with KiCad footprints and suggested supplier parts (Digi-Key / LCSC / Mouser)
+- **Pre-compiled firmware** (`ArcDice_v1.1.0_firmware.hex`) — flash with a $5 USBasp and `avrdude` in 30 seconds
+- **Gerber package** (`ArcDice_v2.1_gerber.zip`) — upload the inner `Archive.zip` to PCBWay or JLCPCB; ~$5 for 5 boards
+- **BOM CSV** (`ArcDice_v2.1_bom.csv`) — 10 lines with KiCad footprints and suggested supplier parts (Digi-Key / LCSC / Mouser)
 - **Assembly guide** — step-by-step build instructions with a troubleshooting table
 
 Total cost of parts: roughly **$8–12** if you're sourcing everything new, less if you have a parts bin.
 
 ```bash
 # Flash the firmware
-avrdude -c usbasp -p attiny13 -U flash:w:firmware-v1.1.0.hex:i
+avrdude -c usbasp -p attiny13 -U flash:w:ArcDice_v1.1.0_firmware.hex:i
 ```
 
 The full build takes about 30 minutes if you've soldered through-hole before.
@@ -120,10 +120,10 @@ Latest release: **[v1.1.0 — Hardware v2.1]({{ site.github_url }}/releases/tag/
 
 | Asset | Size | Description |
 |-------|------:|-------------|
-| [firmware-v1.1.0.hex]({{ site.github_url }}/releases/download/v1.1.0/firmware-v1.1.0.hex) | 1.7 KB | Pre-compiled ATtiny13A firmware |
-| [gerber-v2.1.zip]({{ site.github_url }}/releases/download/v1.1.0/gerber-v2.1.zip) | 208 KB | PCBWay-ready Gerber package |
-| [bom-v2.1.csv]({{ site.github_url }}/releases/download/v1.1.0/bom-v2.1.csv) | 2.7 KB | Bill of Materials (10 lines, 26 parts) |
-| [assembly-guide-v2.1.md]({{ site.github_url }}/releases/download/v1.1.0/assembly-guide-v2.1.md) | 4.8 KB | 6-step build instructions |
+| [ArcDice_v1.1.0_firmware.hex]({{ site.github_url }}/releases/download/v1.1.0/ArcDice_v1.1.0_firmware.hex) | 1.7 KB | Pre-compiled ATtiny13A firmware |
+| [ArcDice_v2.1_gerber.zip]({{ site.github_url }}/releases/download/v1.1.0/ArcDice_v2.1_gerber.zip) | 208 KB | PCBWay-ready Gerber package |
+| [ArcDice_v2.1_bom.csv]({{ site.github_url }}/releases/download/v1.1.0/ArcDice_v2.1_bom.csv) | 2.7 KB | Bill of Materials (10 lines, 26 parts) |
+| [ArcDice_v2.1_assembly_guide.md]({{ site.github_url }}/releases/download/v1.1.0/ArcDice_v2.1_assembly_guide.md) | 4.8 KB | 6-step build instructions |
 
 **SHA256** (firmware):
 ```

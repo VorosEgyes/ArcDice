@@ -21,8 +21,8 @@ logo: /images/assembled-hero.jpg
 exclude:
   - BOM.md
   - ASSEMBLY_GUIDE.md
-  - gerber-v2.1.zip
-  - bom-v2.1.csv
-  - firmware-v1.1.0.hex
+  - ArcDice_v2.1_gerber.zip
+  - ArcDice_v2.1_bom.csv
+  - ArcDice_v1.1.0_firmware.hex
   - "*.gbr"
   - "*.gbrjob"
